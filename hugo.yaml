@@ -1,0 +1,121 @@
+baseURL: "https://wenxiaoshi.github.io/humanities-blog/"
+languageCode: zh-cn
+title: "Wenshy · 人文随笔"
+theme: hugo-theme-stack
+
+defaultContentLanguage: zh-cn
+
+pagination:
+  pagerSize: 10
+
+languages:
+  zh-cn:
+    languageName: 中文
+    weight: 1
+
+params:
+  mainSections:
+    - post
+  featuredImageField: image
+  rssFullContent: true
+  favicon: 
+
+  footer:
+    since: 2026
+
+  dateFormat:
+    published: 2006-01-02
+    lastUpdated: 2006-01-02 15:04 MST
+
+  sidebar:
+    compact: false
+    emoji: 🌙
+    subtitle: "诗歌 · 随笔 · 生活记录"
+    avatar: img/avatar.png
+
+  article:
+    math: false
+    toc: true
+    readingTime: true
+    license:
+      enabled: false
+
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+    page:
+      - type: toc
+
+  colorScheme:
+    toggle: true
+    default: auto
+
+  imageProcessing:
+    cover:
+      enabled: true
+    content:
+      enabled: true
+
+menu:
+  main:
+    - identifier: about
+      name: 关于我
+      url: /humanities-blog/about/
+      weight: 1
+      params:
+        icon: user
+    - identifier: poetry
+      name: 于是我开始写诗
+      url: /humanities-blog/categories/诗歌/
+      weight: 2
+      params:
+        icon: infinity
+    - identifier: life
+      name: 生活随笔
+      url: /humanities-blog/categories/生活/
+      weight: 3
+      params:
+        icon: messages
+
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/wenxiaoshi
+      params:
+        icon: brand-github
+
+related:
+  includeNewer: true
+  threshold: 60
+  toLower: false
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 200
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
+  highlight:
+    noClasses: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+enableRobotsTXT: true
+
+taxonomies:
+  category: categories
+  tag: tags
