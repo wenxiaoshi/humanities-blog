@@ -4,14 +4,90 @@ title: "Wenshy · 人文随笔"
 theme: hugo-theme-stack
 
 defaultContentLanguage: zh-cn
+defaultContentLanguageInSubdir: false
 
 pagination:
-  pagerSize: 10
+  pagerSize: 100
 
 languages:
   zh-cn:
     languageName: 中文
     weight: 1
+    title: "Wenshy · 人文随笔"
+    params:
+      sidebar:
+        subtitle: "诗歌 · 随笔 · 生活记录"
+    menu:
+      main:
+        - identifier: about
+          name: 关于我
+          url: /humanities-blog/about/
+          weight: 1
+          params:
+            icon: user
+        - identifier: poetry
+          name: 于是我开始写诗
+          url: /humanities-blog/categories/诗歌/
+          weight: 2
+          params:
+            icon: infinity
+        - identifier: treasure
+          name: 山洞里的宝藏
+          url: /humanities-blog/categories/香水/
+          weight: 3
+          params:
+            icon: search
+        - identifier: life
+          name: 生活随笔
+          url: /humanities-blog/categories/生活/
+          weight: 4
+          params:
+            icon: messages
+      social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/wenxiaoshi
+          params:
+            icon: brand-github
+  en:
+    languageName: English
+    weight: 2
+    title: "Wenshy · Humanities"
+    params:
+      sidebar:
+        subtitle: "Poetry · Essays · Life Notes"
+    menu:
+      main:
+        - identifier: about
+          name: About
+          url: /humanities-blog/en/about/
+          weight: 1
+          params:
+            icon: user
+        - identifier: poetry
+          name: Poetry
+          url: /humanities-blog/en/categories/poetry/
+          weight: 2
+          params:
+            icon: infinity
+        - identifier: treasure
+          name: Treasures
+          url: /humanities-blog/en/categories/perfume/
+          weight: 3
+          params:
+            icon: search
+        - identifier: life
+          name: Life Notes
+          url: /humanities-blog/en/categories/life/
+          weight: 4
+          params:
+            icon: messages
+      social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/wenxiaoshi
+          params:
+            icon: brand-github
 
 params:
   mainSections:
@@ -30,7 +106,6 @@ params:
   sidebar:
     compact: false
     emoji: 🌙
-    subtitle: "诗歌 · 随笔 · 生活记录"
     avatar: img/avatar.png
 
   article:
@@ -46,8 +121,7 @@ params:
       - type: archives
         params:
           limit: 5
-    page:
-      - type: toc
+    page: []
 
   colorScheme:
     toggle: true
@@ -58,34 +132,6 @@ params:
       enabled: true
     content:
       enabled: true
-
-menu:
-  main:
-    - identifier: about
-      name: 关于我
-      url: /humanities-blog/about/
-      weight: 1
-      params:
-        icon: user
-    - identifier: poetry
-      name: 于是我开始写诗
-      url: /humanities-blog/categories/诗歌/
-      weight: 2
-      params:
-        icon: infinity
-    - identifier: life
-      name: 生活随笔
-      url: /humanities-blog/categories/生活/
-      weight: 3
-      params:
-        icon: messages
-
-  social:
-    - identifier: github
-      name: GitHub
-      url: https://github.com/wenxiaoshi
-      params:
-        icon: brand-github
 
 related:
   includeNewer: true

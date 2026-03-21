@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="article-list--compact">
+    <h2 class="section-title">{{ if eq .Site.Language.Lang "en" }}All Posts{{ else }}全部文章{{ end }}</h2>
+    
+    {{ $pages := where .Site.RegularPages "Section" "post" }}
+    {{ range $pages.ByDate.Reverse }}
+    <article class="article-item">
+        <a href="{{ .RelPermalink }}">
+            <h3>{{ .Title }}</h3>
+        </a>
+        {{ if .Description }}
+        <p class="description">{{ .Description }}</p>
+        {{ end }}
+        <time>{{ .Date.Format "2006-01-02" }}</time>
+    </article>
+    {{ end }}
+</section>
+{{ end }}
