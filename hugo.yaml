@@ -21,25 +21,25 @@ languages:
       main:
         - identifier: about
           name: 关于我
-          url: /humanities-blog/about/
+          url: /about/
           weight: 1
           params:
             icon: user
         - identifier: poetry
           name: 于是我开始写诗
-          url: /humanities-blog/categories/诗歌/
+          url: /categories/诗歌/
           weight: 2
           params:
             icon: infinity
         - identifier: treasure
           name: 山洞里的宝藏
-          url: /humanities-blog/categories/香水/
+          url: /categories/香水/
           weight: 3
           params:
             icon: search
         - identifier: life
           name: 生活随笔
-          url: /humanities-blog/categories/生活/
+          url: /categories/生活/
           weight: 4
           params:
             icon: messages
@@ -60,25 +60,25 @@ languages:
       main:
         - identifier: about
           name: About
-          url: /humanities-blog/en/about/
+          url: /en/about/
           weight: 1
           params:
             icon: user
         - identifier: poetry
           name: Poetry
-          url: /humanities-blog/en/categories/poetry/
+          url: /en/categories/poetry/
           weight: 2
           params:
             icon: infinity
         - identifier: treasure
           name: Treasures
-          url: /humanities-blog/en/categories/perfume/
+          url: /en/categories/perfume/
           weight: 3
           params:
             icon: search
         - identifier: life
           name: Life Notes
-          url: /humanities-blog/en/categories/life/
+          url: /en/categories/life/
           weight: 4
           params:
             icon: messages
