@@ -1,6 +1,6 @@
 ---
 title: "生活是土豆炖豆角"
-slug: "life-lesson"
+slug: "life"
 date: 2026-03-24
 categories:
   - 诗歌
